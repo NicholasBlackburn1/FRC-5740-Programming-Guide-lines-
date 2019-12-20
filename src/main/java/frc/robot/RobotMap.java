@@ -18,14 +18,15 @@ public class RobotMap {
   // Define port numbers of Controllers Motor controllers etc for robot
 
   // Driver station usb ports
-  int DSDriver = 1;
-  int DSOperator = 2;
+  public int DSDriver = 1;
+  public int DSOperator = 2;
   // xbox controller ids
-  int LStick = 1;
+  public int LStick = 1;
+  public int RStick = 4;
 
   // Robot Drive train Motors ports
-  int FrontL = 1;
-  int FrontR = 2;
-  int BackL = 3;
-  int BackR = 4;
+  public int FrontL = 1;
+  public int FrontR = 2;
+  public int BackL = 3;
+  public int BackR = 4;
 }

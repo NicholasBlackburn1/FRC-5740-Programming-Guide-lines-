@@ -17,10 +17,14 @@ public class DriveTrain {
 
     }
 
-    // Function for Drive train Objects Run in Teleop Perodic
-    public void perodic() {
+    // Function for Drivetrain Objects Run in Teleop Perodic
 
-        Robot.m_hardware.Drive.arcadeDrive(Robot.m_oi.Driver.getRawAxis());
+    public static void perodic() {
+
+        // Created an Arcade drive object to drive the robot
+
+        Robot.m_hardware.Drive.arcadeDrive(Robot.m_oi.Driver.getRawAxis(Robot.m_map.LStick),
+                Robot.m_oi.Driver.getRawAxis(Robot.m_map.RStick));
 
     }
 }

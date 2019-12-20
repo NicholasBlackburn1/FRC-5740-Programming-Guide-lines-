@@ -13,7 +13,7 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 public class RobotHardware {
 
-    RobotMap map;
+    RobotMap map = new RobotMap();
 
     // Creates Motor Controller Objects For Robots Drive train
 
@@ -30,6 +30,6 @@ public class RobotHardware {
 
     // used to create Drive Train to drive robot
 
-    DifferentialDrive Drive = new DifferentialDrive(Left, Right);
+    public DifferentialDrive Drive = new DifferentialDrive(Left, Right);
 
 }

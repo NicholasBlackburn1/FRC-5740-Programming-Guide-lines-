@@ -36,7 +36,7 @@ public class Robot extends TimedRobot {
   public void robotPeriodic() {
 
     // enables robot drive train to be controlled by user
-    m_hardware.Drive.arcadeDrive(m_oi.Driver.gety, zRotation);
+
   }
 
   @Override

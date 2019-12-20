@@ -19,7 +19,7 @@ public class OI {
   RobotMap map;
 
   // Driver Station Controlers
-  XboxController Driver = new XboxController(map.DSDriver);
-  XboxController Operator = new XboxController(map.DSOperator);
+  public XboxController Driver = new XboxController(map.DSDriver);
+  public XboxController Operator = new XboxController(map.DSOperator);
 
 }

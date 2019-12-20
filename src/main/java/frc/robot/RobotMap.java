@@ -20,6 +20,8 @@ public class RobotMap {
   // Driver station usb ports
   int DSDriver = 1;
   int DSOperator = 2;
+  // xbox controller ids
+  int LStick = 1;
 
   // Robot Drive train Motors ports
   int FrontL = 1;

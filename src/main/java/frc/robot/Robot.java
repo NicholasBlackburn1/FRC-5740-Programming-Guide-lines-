@@ -18,6 +18,7 @@ public class Robot extends TimedRobot {
   // Calls Operator Interface as an object
   public static OI m_oi;
   public static RobotHardware m_hardware;
+  public static RobotMap m_map;
 
   // Calls Robot Hardware as an object
 
@@ -30,6 +31,8 @@ public class Robot extends TimedRobot {
     // inits object m_hardware as Robot Hardware class
     m_hardware = new RobotHardware();
 
+    // inits object m_map as Robot Map class
+    m_map = new RobotMap();
   }
 
   @Override

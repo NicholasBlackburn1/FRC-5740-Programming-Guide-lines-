@@ -13,15 +13,13 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 public class RobotHardware {
 
-    RobotMap map = new RobotMap();
-
     // Creates Motor Controller Objects For Robots Drive train
 
-    Spark FrontR = new Spark(map.FrontR);
-    Spark FrontL = new Spark(map.FrontL);
+    Spark FrontR = new Spark(RobotMap.FrontR);
+    Spark FrontL = new Spark(RobotMap.FrontL);
 
-    PWMTalonSRX BackR = new PWMTalonSRX(map.BackR);
-    PWMTalonSRX BackL = new PWMTalonSRX(map.BackL);
+    PWMTalonSRX BackR = new PWMTalonSRX(RobotMap.BackR);
+    PWMTalonSRX BackL = new PWMTalonSRX(RobotMap.BackL);
 
     // Creates SpeedController Group Objects For Drive Train
 

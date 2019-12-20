@@ -3,6 +3,7 @@ package frc.robot.subsystems;
 import frc.robot.OI;
 import frc.robot.Robot;
 import frc.robot.RobotHardware;
+import frc.robot.RobotMap;
 
 /**
  * This is were you Call all your Drive train Objects to modify the Drive trains
@@ -23,8 +24,8 @@ public class DriveTrain {
 
         // Created an Arcade drive object to drive the robot
 
-        Robot.m_hardware.Drive.arcadeDrive(Robot.m_oi.Driver.getRawAxis(Robot.m_map.LStick),
-                Robot.m_oi.Driver.getRawAxis(Robot.m_map.RStick));
+        Robot.m_hardware.Drive.arcadeDrive(OI.Driver.getRawAxis(RobotMap.RStick),
+                OI.Driver.getRawAxis(RobotMap.LStick));
 
     }
 }

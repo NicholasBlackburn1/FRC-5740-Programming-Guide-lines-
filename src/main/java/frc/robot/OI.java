@@ -16,10 +16,8 @@ import edu.wpi.first.wpilibj.XboxController;
 public class OI {
 
   // object for calling robot map class
-  RobotMap map;
-
-  // Driver Station Controlers
-  public XboxController Driver = new XboxController(map.DSDriver);
-  public XboxController Operator = new XboxController(map.DSOperator);
+  // Driver Station
+  public static XboxController Driver = new XboxController(RobotMap.DSDriver);
+  public static XboxController Operator = new XboxController(RobotMap.DSOperator);
 
 }

@@ -13,6 +13,7 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.subsystems.DriveTrain;
+import frc.robot.subsystems.DsData;
 
 public class Robot extends TimedRobot {
 
@@ -31,15 +32,10 @@ public class Robot extends TimedRobot {
 
     // inits object m_hardware as Robot Hardware class
     m_hardware = new RobotHardware();
-
-    // inits object m_map as Robot Map class
-    m_map = new RobotMap();
   }
 
   @Override
   public void robotPeriodic() {
-
-    // enables robot drive train to be controlled by user
 
   }
 
@@ -64,6 +60,7 @@ public class Robot extends TimedRobot {
 
   @Override
   public void teleopInit() {
+    DsData.init("name");
 
   }
 

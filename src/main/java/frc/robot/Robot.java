@@ -14,6 +14,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.subsystems.DriveTrain;
 import frc.robot.subsystems.DsData;
+import frc.robot.subsystems.DsTestData;
 
 public class Robot extends TimedRobot {
 
@@ -32,6 +33,12 @@ public class Robot extends TimedRobot {
 
     // inits object m_hardware as Robot Hardware class
     m_hardware = new RobotHardware();
+
+    // Inits Driver Station Data
+    DsData.init("name");
+
+    // Test data for robot
+    DsTestData.testData("Test-Data");
   }
 
   @Override
@@ -60,7 +67,6 @@ public class Robot extends TimedRobot {
 
   @Override
   public void teleopInit() {
-    DsData.init("name");
 
   }
 

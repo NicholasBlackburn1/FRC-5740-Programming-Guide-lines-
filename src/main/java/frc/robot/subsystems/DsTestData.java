@@ -15,7 +15,7 @@ import frc.robot.RobotMap;
  */
 public class DsTestData {
 
-    public void testData(String name) {
+    public static void testData(String name) {
 
         // Creates an Object for shuffleboard and creates a tab named test
         final ShuffleboardTab tab = Shuffleboard.getTab(name);

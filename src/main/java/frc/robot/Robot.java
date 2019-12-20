@@ -17,6 +17,7 @@ public class Robot extends TimedRobot {
 
   // Calls Operator Interface as an object
   public static OI m_oi;
+  public static RobotHardware m_hardware;
 
   // Calls Robot Hardware as an object
 
@@ -25,6 +26,9 @@ public class Robot extends TimedRobot {
 
     // inits object m_oi as Operator Interface
     m_oi = new OI();
+
+    // inits object m_hardware as Robot Hardware class
+    m_hardware = new RobotHardware();
 
   }
 

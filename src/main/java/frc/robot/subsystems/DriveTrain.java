@@ -1,5 +1,6 @@
 package frc.robot.subsystems;
 
+import edu.wpi.first.wpilibj.RobotState;
 import frc.robot.OI;
 import frc.robot.Robot;
 import frc.robot.RobotHardware;
@@ -11,6 +12,8 @@ import frc.robot.RobotMap;
  */
 
 public class DriveTrain {
+
+    RobotState robotState;
 
     // Object that inits Operator Interface for robot
 
@@ -26,6 +29,12 @@ public class DriveTrain {
 
         Robot.m_hardware.Drive.arcadeDrive(OI.Driver.getRawAxis(RobotMap.RStick),
                 OI.Driver.getRawAxis(RobotMap.LStick));
+    }
+
+    public static void testMode() {
+
+        // Sets Drivetrain to run forward
+        Robot.m_hardware.Drive.arcadeDrive(1, 1);
 
     }
 }

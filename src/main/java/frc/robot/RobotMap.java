@@ -21,12 +21,16 @@ public class RobotMap {
   public static int DSDriver = 1;
   public static int DSOperator = 2;
   // xbox controller ids
-  public static int LStick = 1;
-  public static int RStick = 4;
+  public static int LStick = 5;
+  public static int RStick = 0;
 
   // Robot Drive train Motors ports
   public static int FrontL = 1;
   public static int FrontR = 2;
   public static int BackL = 3;
   public static int BackR = 4;
+
+  // Usb ports on the Roborio
+  public static int RIOCam = 0;
+  public static int RIOLog = 1;
 }

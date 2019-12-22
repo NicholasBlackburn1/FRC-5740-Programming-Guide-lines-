@@ -27,7 +27,6 @@ public class DsData {
         tab.getLayout(name, BuiltInLayouts.kGrid);
 
         // Created a simple Display widget to Display controller 1 axis
-        tab.add("Controller", OI.Driver.getRawAxis(RobotMap.LStick)).withWidget(BuiltInWidgets.kNumberBar)
-                .withProperties(Map.of("min", 0, "max", 2)).withSize(2, 1).withPosition(0, 2).getEntry();
+
     }
 }

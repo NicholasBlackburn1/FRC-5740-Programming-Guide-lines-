@@ -14,7 +14,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.subsystems.DriveTrain;
 import frc.robot.subsystems.DsData;
-import frc.robot.subsystems.DsTestData;
+import frc.robot.test.DsTestData;
 
 public class Robot extends TimedRobot {
 
@@ -22,6 +22,7 @@ public class Robot extends TimedRobot {
   public static OI m_oi;
   public static RobotHardware m_hardware;
   public static RobotMap m_map;
+  public static DsTestData m_data;
 
   // Calls Robot Hardware as an object
 
@@ -34,11 +35,6 @@ public class Robot extends TimedRobot {
     // inits object m_hardware as Robot Hardware class
     m_hardware = new RobotHardware();
 
-    // Inits Driver Station Data
-    DsData.init("name");
-
-    // Test data for robot
-    DsTestData.testData("Test-Data");
   }
 
   @Override
@@ -72,6 +68,8 @@ public class Robot extends TimedRobot {
 
   @Override
   public void teleopPeriodic() {
+    // Reads data from controller joystics and sends them to the Network table
+    DsTestData.perodic();
 
     // Controlls drive train for robot
     DriveTrain.perodic();
@@ -81,5 +79,7 @@ public class Robot extends TimedRobot {
 
   @Override
   public void testPeriodic() {
+
+    DriveTrain.testMode();
   }
 }

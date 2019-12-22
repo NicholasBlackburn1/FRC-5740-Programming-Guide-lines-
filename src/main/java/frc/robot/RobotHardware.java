@@ -1,10 +1,12 @@
 package frc.robot;
 
+import edu.wpi.first.wpilibj.BuiltInAccelerometer;
 import edu.wpi.first.wpilibj.PWM;
 import edu.wpi.first.wpilibj.PWMTalonSRX;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
+import edu.wpi.first.wpilibj.interfaces.Accelerometer;
 
 /**
  * This is were you Define all physical robot hardware (IE: motor controllers,
@@ -12,6 +14,8 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
  */
 
 public class RobotHardware {
+
+    // Creates accelerometer Objects For Robot Speed calck
 
     // Creates Motor Controller Objects For Robots Drive train
 

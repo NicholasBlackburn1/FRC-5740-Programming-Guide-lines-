@@ -9,19 +9,22 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.command.PIDCommand;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import frc.robot.commands.PidDrive;
 import frc.robot.subsystems.CameraConfig;
 import frc.robot.subsystems.DriveTrain;
 import frc.robot.subsystems.DsData;
-import frc.robot.test.DsTestData;
+import frc.robot.subsystems.test.*;
 
 public class Robot extends TimedRobot {
 
   // Calls Operator Interface as an object
   public static OI m_oi;
   public static RobotHardware m_hardware;
+  public static PidDrive m_pid;
 
   // Calls Robot Hardware as an object
 
@@ -34,8 +37,11 @@ public class Robot extends TimedRobot {
     // inits object m_hardware as Robot Hardware class
     m_hardware = new RobotHardware();
 
+    m_pid = new PidDrive();
+
     // Inits Camera Settings for robotrio
     CameraConfig.Config();
+
   }
 
   @Override
@@ -55,10 +61,15 @@ public class Robot extends TimedRobot {
   @Override
   public void autonomousInit() {
 
+    m_pid.initialize();
+
   }
 
   @Override
   public void autonomousPeriodic() {
+
+    m_pid.execute();
+
     Scheduler.getInstance().run();
   }
 

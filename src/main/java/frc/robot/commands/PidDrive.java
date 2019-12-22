@@ -27,38 +27,30 @@ public class PidDrive extends Command {
 
   // Called just before this Command runs the first time
   @Override
-  protected void initialize() {
-
-    // Calibrates Gyro to current pos
-    RobotHardware.gyro.calibrate();
-
-    // Sets Pid Loop Type
-    RobotHardware.gyro.setPIDSourceType(PIDSourceType.kDisplacement);
+  public void initialize() {
 
   }
 
   // Called repeatedly when this Command is scheduled to run
   @Override
-  protected void execute() {
+  public void execute() {
 
-    // sets P,I,D loop to doules on Dashboard
-    RobotHardware.myPID.setPID(p, i, d);
   }
 
   // Make this return true when this Command no longer needs to run execute()
   @Override
-  protected boolean isFinished() {
+  public boolean isFinished() {
     return false;
   }
 
   // Called once after isFinished returns true
   @Override
-  protected void end() {
+  public void end() {
   }
 
   // Called when another command which requires one or more of the same
   // subsystems is scheduled to run
   @Override
-  protected void interrupted() {
+  public void interrupted() {
   }
 }

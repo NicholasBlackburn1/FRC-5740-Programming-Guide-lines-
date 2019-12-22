@@ -26,7 +26,5 @@ public class DsData {
         // Used to create a Shuffleboard Tab that inharets the name string
         tab.getLayout(name, BuiltInLayouts.kGrid);
 
-        // Created a simple Display widget to Display controller 1 axis
-
     }
 }

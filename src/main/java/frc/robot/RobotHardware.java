@@ -1,12 +1,19 @@
 package frc.robot;
 
+import edu.wpi.first.wpilibj.ADXRS450_Gyro;
 import edu.wpi.first.wpilibj.BuiltInAccelerometer;
+import edu.wpi.first.wpilibj.PIDController;
+import edu.wpi.first.wpilibj.PIDOutput;
+import edu.wpi.first.wpilibj.PIDSource;
+import edu.wpi.first.wpilibj.PIDSourceType;
 import edu.wpi.first.wpilibj.PWM;
 import edu.wpi.first.wpilibj.PWMTalonSRX;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj.interfaces.Accelerometer;
+import frc.robot.commands.PidDrive;
+import frc.robot.subsystems.Pidinout;
 
 /**
  * This is were you Define all physical robot hardware (IE: motor controllers,
@@ -15,7 +22,11 @@ import edu.wpi.first.wpilibj.interfaces.Accelerometer;
 
 public class RobotHardware {
 
-    // Creates accelerometer Objects For Robot Speed calck
+    // Creates Gyro for pid loop
+    public static ADXRS450_Gyro gyro = new ADXRS450_Gyro();
+S
+    // Pid loop
+    public static PIDController myPID = new PIDController(PidDrive.p, PidDrive.i, PidDrive.d, Pidinout.myPIDsource, Pidinout.myPIDoutput);
 
     // Creates Motor Controller Objects For Robots Drive train
 
@@ -32,6 +43,6 @@ public class RobotHardware {
 
     // used to create Drive Train to drive robot
 
-    public DifferentialDrive Drive = new DifferentialDrive(Left, Right);
+    public static DifferentialDrive Drive = new DifferentialDrive(Left, Right);
 
 }

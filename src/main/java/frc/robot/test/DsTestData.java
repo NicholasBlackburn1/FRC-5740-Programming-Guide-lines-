@@ -28,16 +28,19 @@ public class DsTestData {
                         .withPosition(7, 0).withSize(3, 4).withWidget(BuiltInWidgets.kCameraStream);
 
         // Creates an Network Table entry to Controller info
-        private final NetworkTableEntry ControllerX = tab.add("ControllerX", text).withPosition(0, 2).withSize(2, 1)
-                        .withWidget(BuiltInWidgets.kNumberBar).getEntry();
+        private static NetworkTableEntry controllerXEntry = tab.add("ControllerX", text).withPosition(0, 2)
+                        .withSize(2, 1).withWidget(BuiltInWidgets.kNumberBar).getEntry();
 
-        private final
+        // Creates an Network Table entry to Controller info
+        private static NetworkTableEntry controllerYEntry = tab.add("ControllerY", text).withPosition(0, 4)
+                        .withSize(2, 1).withWidget(BuiltInWidgets.kNumberBar).getEntry();
+
         // Function to constally update Shuffleboard Values
         public final static void perodic() {
-                /*
-                 * final Double X =
-                 * ControllerX.getDouble(OI.Driver.getRawAxis(RobotMap.RStick)); final Double Y
-                 * = ControllerY.getDouble(OI.Driver.getRawAxis(RobotMap.LStick));
-                 */
+
+                // update Controller Pos on Dashbord
+                controllerXEntry.setDouble(OI.Driver.getRawAxis(RobotMap.LStick));
+                controllerYEntry.setDouble(OI.Driver.getRawAxis(RobotMap.RStick));
         }
+
 }

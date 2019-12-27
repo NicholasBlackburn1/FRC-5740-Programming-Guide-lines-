@@ -38,15 +38,15 @@ public class DsTestData {
                         .withWidget(BuiltInWidgets.kNumberBar).getEntry();
 
         // Creates an Network Table entry to Pid loop
-        private static NetworkTableEntry pEntry = tab.add("proportional gain", 0).withPosition(2, 0).withSize(2, 1)
+        private static NetworkTableEntry pEntry = tab.add("proportional gain", 0).withPosition(9, 0).withSize(2, 1)
                         .withWidget(BuiltInWidgets.kNumberSlider).getEntry();
 
         // Creates an Network Table entry to Pid loop
-        private static NetworkTableEntry iEntry = tab.add("intergral gain", 0).withPosition(2, 2).withSize(2, 1)
+        private static NetworkTableEntry iEntry = tab.add("intergral gain", 0).withPosition(9, 2).withSize(2, 1)
                         .withWidget(BuiltInWidgets.kNumberSlider).getEntry();
 
         // Creates an Network Table entry to Pid loop
-        private static NetworkTableEntry dEntry = tab.add("derivitave gain", 0).withPosition(2, 4).withSize(2, 1)
+        private static NetworkTableEntry dEntry = tab.add("derivitave gain", 0).withPosition(9, 4).withSize(2, 1)
                         .withWidget(BuiltInWidgets.kNumberSlider).getEntry();
 
         // Function to constally update Shuffleboard Values

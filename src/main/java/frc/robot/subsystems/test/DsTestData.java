@@ -1,4 +1,4 @@
-package frc.robot.test;
+package frc.robot.subsystems.test;
 
 import java.util.Map;
 
@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
 import frc.robot.OI;
 import frc.robot.RobotHardware;
 import frc.robot.RobotMap;
-import frc.robot.commands.PidDrive;
+
 import frc.robot.subsystems.CameraConfig;
 
 /**
@@ -55,14 +55,6 @@ public class DsTestData {
                 // update Controller Pos on Dashbord
                 controllerXEntry.setDouble(OI.Driver.getRawAxis(RobotMap.LStick));
                 controllerYEntry.setDouble(OI.Driver.getRawAxis(RobotMap.RStick));
-
-                // sets p double in command
-                pEntry.setDouble(PidDrive.p);
-                // sets i double in command
-                iEntry.setDouble(PidDrive.i);
-
-                // sets d double in command
-                dEntry.setDouble(PidDrive.d);
 
         }
 

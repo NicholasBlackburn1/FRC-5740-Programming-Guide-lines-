@@ -12,8 +12,6 @@ import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj.interfaces.Accelerometer;
-import frc.robot.commands.PidDrive;
-import frc.robot.subsystems.Pidinout;
 
 /**
  * This is were you Define all physical robot hardware (IE: motor controllers,
@@ -24,9 +22,6 @@ public class RobotHardware {
 
     // Creates Gyro for pid loop
     public static ADXRS450_Gyro gyro = new ADXRS450_Gyro();
-S
-    // Pid loop
-    public static PIDController myPID = new PIDController(PidDrive.p, PidDrive.i, PidDrive.d, Pidinout.myPIDsource, Pidinout.myPIDoutput);
 
     // Creates Motor Controller Objects For Robots Drive train
 
@@ -43,6 +38,6 @@ S
 
     // used to create Drive Train to drive robot
 
-    public static DifferentialDrive Drive = new DifferentialDrive(Left, Right);
+    public DifferentialDrive Drive = new DifferentialDrive(Left, Right);
 
 }

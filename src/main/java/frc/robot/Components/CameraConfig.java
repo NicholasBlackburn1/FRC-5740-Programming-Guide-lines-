@@ -1,8 +1,8 @@
-package frc.robot.subsystems;
+package frc.robot.Components;
 
 import edu.wpi.cscore.UsbCamera;
 import edu.wpi.first.cameraserver.CameraServer;
-import frc.robot.RobotMap;
+import frc.robot.hardware.*;
 
 /**
  * This Class is for Setting up / Defining Camera settings Vision System
@@ -17,7 +17,8 @@ public class CameraConfig {
     // Function Used to setup usb Camera Config
     public static void Config() {
 
-        CvCamera.setBrightness(10);
+        CvCamera.setBrightness(0);
+        CvCamera.setResolution(480, 320);
         CvCamera.setFPS(15);
         CvCamera.setExposureAuto();
     }

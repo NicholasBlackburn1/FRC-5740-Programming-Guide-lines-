@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
 import edu.wpi.first.wpilibj.shuffleboard.SimpleWidget;
 import frc.robot.OI;
 import frc.robot.hardware.RobotMap;
-import frc.robot.subsystems.CameraConfig;
+import frc.robot.Components.*;
 
 /**
  * This Class is For Displaying Data From the Robot to ShuffleBoard in Test Mode
@@ -25,7 +25,7 @@ public class DsTestData {
         public static ShuffleboardTab tab = Shuffleboard.getTab("DATA");
 
         // Created an Complex widget that displays video feed
-        private final ComplexWidget frontCameraWidget = tab.add("Normal_Video", CameraConfig.CvCamera)
+        private static ComplexWidget frontCameraWidget = tab.add("Normal_Video", CameraConfig.CvCamera)
                         .withPosition(2, 0).withSize(4, 5).withWidget(BuiltInWidgets.kCameraStream);
 
         // Creates an Network Table entry to Controller info
@@ -50,8 +50,12 @@ public class DsTestData {
 
         // Creates an Network Table entry to show state of Vision Target
 
-        private static NetworkTableEntry targetSeenWidget = tab.add("Vision_Target", false).withPosition(0, 0)
+        private static NetworkTableEntry targetSeenWidget = tab.add("Vision System Status", false).withPosition(0, 0)
                         .withSize(2, 1).withWidget(BuiltInWidgets.kBooleanBox).getEntry();
+
+        // Graph to display Vision System Accuracy
+        private static NetworkTableEntry visionAccuracyWEntry = tab.add("Vision Accuracy", 0).withPosition(6, 0)
+                        .withSize(3, 2).withWidget(BuiltInWidgets.kGraph).getEntry();
 
         // Function to constally update Shuffleboard Values
         public final static void perodic() {

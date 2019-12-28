@@ -1,4 +1,4 @@
-package frc.robot.subsystems;
+package frc.robot.Components;
 
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
@@ -6,7 +6,7 @@ import edu.wpi.first.wpilibj.shuffleboard.BuiltInLayouts;
 import edu.wpi.first.wpilibj.shuffleboard.BuiltInWidgets;
 
 import frc.robot.OI;
-import frc.robot.RobotMap;
+import frc.robot.hardware.*;
 
 import java.util.Map;
 

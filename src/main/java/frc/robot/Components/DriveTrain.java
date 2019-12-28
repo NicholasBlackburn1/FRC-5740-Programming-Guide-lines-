@@ -1,10 +1,9 @@
-package frc.robot.subsystems;
+package frc.robot.Components;
 
 import edu.wpi.first.wpilibj.RobotState;
 import frc.robot.OI;
 import frc.robot.Robot;
-import frc.robot.RobotHardware;
-import frc.robot.RobotMap;
+import frc.robot.hardware.*;
 
 /**
  * This is were you Call all your Drive train Objects to modify the Drive trains

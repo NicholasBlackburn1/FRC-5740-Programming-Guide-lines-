@@ -27,8 +27,8 @@ public class DriveTrain {
 
         // Created an Arcade drive object to drive the robot
 
-        Robot.m_hardware.Drive.arcadeDrive(OI.Driver.getRawAxis(RobotMap.RStick),
-                OI.Driver.getRawAxis(RobotMap.LStick));
+        Robot.m_hardware.Drive.arcadeDrive(OI.Driver.getRawAxis(RobotMap.RStickX),
+                OI.Driver.getRawAxis(RobotMap.LStickY));
     }
 
     public static void testMode() {

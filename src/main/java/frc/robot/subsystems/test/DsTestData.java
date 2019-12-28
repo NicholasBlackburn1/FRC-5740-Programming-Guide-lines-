@@ -8,6 +8,7 @@ import edu.wpi.first.wpilibj.shuffleboard.BuiltInWidgets;
 import edu.wpi.first.wpilibj.shuffleboard.ComplexWidget;
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
+import edu.wpi.first.wpilibj.shuffleboard.SimpleWidget;
 import frc.robot.OI;
 import frc.robot.RobotHardware;
 import frc.robot.RobotMap;
@@ -27,7 +28,7 @@ public class DsTestData {
 
         // Created an Complex widget that displays video feed
         private final ComplexWidget frontCameraWidget = tab.add("Normal_Video", CameraConfig.CvCamera)
-                        .withPosition(7, 0).withSize(3, 4).withWidget(BuiltInWidgets.kCameraStream);
+                        .withPosition(2, 0).withSize(4, 5).withWidget(BuiltInWidgets.kCameraStream);
 
         // Creates an Network Table entry to Controller info
         private static NetworkTableEntry controllerXEntry = tab.add("ControllerX", 0).withPosition(0, 2).withSize(2, 1)
@@ -49,12 +50,17 @@ public class DsTestData {
         private static NetworkTableEntry dEntry = tab.add("derivitave gain", 0).withPosition(9, 4).withSize(2, 1)
                         .withWidget(BuiltInWidgets.kNumberSlider).getEntry();
 
+        // Creates an Network Table entry to show state of Vision Target
+
+        private static NetworkTableEntry targetSeenWidget = tab.add("Vision_Target", false).withPosition(0, 0)
+                        .withSize(2, 1).withWidget(BuiltInWidgets.kBooleanBox).getEntry();
+
         // Function to constally update Shuffleboard Values
         public final static void perodic() {
 
                 // update Controller Pos on Dashbord
-                controllerXEntry.setDouble(OI.Driver.getRawAxis(RobotMap.LStick));
-                controllerYEntry.setDouble(OI.Driver.getRawAxis(RobotMap.RStick));
+                controllerXEntry.setDouble(OI.Driver.getRawAxis(RobotMap.LStickY));
+                controllerYEntry.setDouble(OI.Driver.getRawAxis(RobotMap.RStickX));
 
         }
 

@@ -20,9 +20,13 @@ public class RobotMap {
   // Driver station usb ports
   public static int DSDriver = 1;
   public static int DSOperator = 2;
-  // xbox controller ids
-  public static int LStick = 0;
-  public static int RStick = 1;
+
+  // xbox controller sticks Aand buttons ids
+  public static int LStickY = 0;
+  public static int RStickX = 5;
+
+  // Buttons for controller
+  public static int Launch = 3;
 
   // Robot Drive train Motors ports
   public static int FrontL = 1;

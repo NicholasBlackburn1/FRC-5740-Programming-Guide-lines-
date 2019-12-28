@@ -8,16 +8,11 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
-import edu.wpi.first.wpilibj.command.Command;
-import edu.wpi.first.wpilibj.command.PIDCommand;
 import edu.wpi.first.wpilibj.command.Scheduler;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
+import frc.robot.hardware.RobotHardware;
 import frc.robot.subsystems.CameraConfig;
 import frc.robot.subsystems.DriveTrain;
-import frc.robot.subsystems.DsData;
-import frc.robot.subsystems.test.*;
+import frc.robot.test.DsTestData;
 
 public class Robot extends TimedRobot {
 

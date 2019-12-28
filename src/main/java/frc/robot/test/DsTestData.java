@@ -1,4 +1,4 @@
-package frc.robot.subsystems.test;
+package frc.robot.test;
 
 import java.util.Map;
 
@@ -10,9 +10,7 @@ import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
 import edu.wpi.first.wpilibj.shuffleboard.SimpleWidget;
 import frc.robot.OI;
-import frc.robot.RobotHardware;
-import frc.robot.RobotMap;
-
+import frc.robot.hardware.RobotMap;
 import frc.robot.subsystems.CameraConfig;
 
 /**

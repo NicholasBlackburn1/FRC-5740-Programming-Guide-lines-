@@ -1,17 +1,14 @@
-package frc.robot.test;
-
-import java.util.Map;
+package frc.robot.Components.datacollection;
 
 import edu.wpi.first.networktables.NetworkTableEntry;
-import edu.wpi.first.wpilibj.shuffleboard.BuiltInLayouts;
 import edu.wpi.first.wpilibj.shuffleboard.BuiltInWidgets;
 import edu.wpi.first.wpilibj.shuffleboard.ComplexWidget;
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
-import edu.wpi.first.wpilibj.shuffleboard.SimpleWidget;
-import frc.robot.OI;
-import frc.robot.hardware.RobotMap;
-import frc.robot.Components.*;
+
+import frc.robot.Components.hardware.OI;
+import frc.robot.Components.hardware.RobotMap;
+import frc.robot.Components.hardware.CameraConfig;
 
 /**
  * This Class is For Displaying Data From the Robot to ShuffleBoard in Test Mode

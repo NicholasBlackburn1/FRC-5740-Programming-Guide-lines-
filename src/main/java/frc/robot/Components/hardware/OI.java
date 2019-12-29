@@ -5,10 +5,10 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-package frc.robot;
+package frc.robot.Components.hardware;
 
 import edu.wpi.first.wpilibj.XboxController;
-import frc.robot.hardware.RobotMap;
+import frc.robot.Components.hardware.RobotMap;
 
 /**
  * This class is the glue that binds the controls on the physical operator

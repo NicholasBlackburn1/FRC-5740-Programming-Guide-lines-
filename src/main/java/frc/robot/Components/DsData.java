@@ -3,12 +3,6 @@ package frc.robot.Components;
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
 import edu.wpi.first.wpilibj.shuffleboard.BuiltInLayouts;
-import edu.wpi.first.wpilibj.shuffleboard.BuiltInWidgets;
-
-import frc.robot.OI;
-import frc.robot.hardware.*;
-
-import java.util.Map;
 
 /**
  * This is The ShuffleBoard Data Display class this class Displays Data from the

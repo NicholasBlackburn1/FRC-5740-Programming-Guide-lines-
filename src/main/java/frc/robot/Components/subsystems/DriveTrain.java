@@ -1,9 +1,8 @@
-package frc.robot.Components;
+package frc.robot.Components.subsystems;
 
 import edu.wpi.first.wpilibj.RobotState;
-import frc.robot.OI;
 import frc.robot.Robot;
-import frc.robot.hardware.*;
+import frc.robot.Components.hardware.*;
 
 /**
  * This is were you Call all your Drive train Objects to modify the Drive trains
@@ -11,14 +10,6 @@ import frc.robot.hardware.*;
  */
 
 public class DriveTrain {
-
-    RobotState robotState;
-
-    // Object that inits Operator Interface for robot
-
-    public void init() {
-
-    }
 
     // Function for Drivetrain Objects Run in Teleop Perodic
 

@@ -1,14 +1,9 @@
 # Welcome to Trogenators Programming Done Right
 
-# Documentation 
+# Documentation
 
-## *Release 1.0*
+## _Release 1.0_
 
-
-## By Nicholas Blackburn and Luke Crum
-
+## By Nicholas Blackburn, Luke Crum on Frc Team 5740
 
 ### Dec 28, 2019
-   
-
-

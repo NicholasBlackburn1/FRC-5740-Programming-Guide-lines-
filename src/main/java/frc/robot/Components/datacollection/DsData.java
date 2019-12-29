@@ -1,4 +1,4 @@
-package frc.robot.Components;
+package frc.robot.Components.datacollection;
 
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;

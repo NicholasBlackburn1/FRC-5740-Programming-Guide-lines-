@@ -1,8 +1,8 @@
-package frc.robot.Components;
+package frc.robot.Components.hardware;
 
 import edu.wpi.cscore.UsbCamera;
 import edu.wpi.first.cameraserver.CameraServer;
-import frc.robot.hardware.*;
+import frc.robot.Components.hardware.*;
 
 /**
  * This Class is for Setting up / Defining Camera settings Vision System

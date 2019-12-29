@@ -12,8 +12,8 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import frc.robot.Components.hardware.OI;
 import frc.robot.Components.hardware.CameraConfig;
 import frc.robot.Components.hardware.RobotHardware;
-import frc.robot.Components.DriveTrain;
-import frc.robot.test.DsTestData;
+import frc.robot.Components.subsystems.DriveTrain;
+import frc.robot.Components.datacollection.DsTestData;
 
 public class Robot extends TimedRobot {
 

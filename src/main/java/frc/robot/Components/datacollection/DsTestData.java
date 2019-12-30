@@ -54,6 +54,9 @@ public class DsTestData {
         private static NetworkTableEntry visionAccuracyWEntry = tab.add("Vision Accuracy", 0).withPosition(6, 0)
                         .withSize(3, 2).withWidget(BuiltInWidgets.kGraph).getEntry();
 
+        private static NetworkTableEntry visionProssedEntry = tab.add("CvVideo", 0).withPosition(6, 2).withSize(3, 3)
+                        .withWidget(BuiltInWidgets.kCameraStream).getEntry();
+
         // Function to constally update Shuffleboard Values
         public final static void perodic() {
 

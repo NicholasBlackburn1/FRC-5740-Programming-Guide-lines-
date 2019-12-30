@@ -1,9 +1,7 @@
-# Welcome to Trogenators Programming Done Right
-
-# Documentation
+# Trogenators Robot Project File Structure
 
 ## _Release 1.0_
 
-## By Nicholas Blackburn, Luke Crum on Frc Team 5740
+## By The Programmers For the Programmers on Team 5740
 
 ### Dec 28, 2019

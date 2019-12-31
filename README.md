@@ -1,6 +1,6 @@
 # FRC-5740-Programming-Guide-Lines
 
-This is a programming guide / layout on how to program team 5740 robot
+#### This is a programming guide / layout on how to program team 5740 robot
 
 ## This Repo contains all the info that you will need to know about our basic robot project
 
@@ -23,3 +23,13 @@ This is a programming guide / layout on how to program team 5740 robot
 ## Robot Logging info
 
 [Debubing robot code page](https://github.com/NicholasBlackburn1/FRC-5740-Programming-Guide-lines-/wiki/Debugging-Robot-Code)
+
+## **Advanced** Quick links
+
+## Robot Vision
+
+[Robot Vision system for Rpi coprossessor](https://github.com/NicholasBlackburn1/FRC-5740-Programming-Guide-lines-/blob/master/src/main/java/Vision/cvrpi.py)
+
+## **Example code**
+
+[RobotExample code ](https://github.com/NicholasBlackburn1/FRC-5740-Programming-Guide-lines-/tree/master/src/main/java/frc/robot)

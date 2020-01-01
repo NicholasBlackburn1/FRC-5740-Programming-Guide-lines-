@@ -1,4 +1,6 @@
-# FRC-5740-Programming-Guide-Lines OUTDATED - well depresicated in frc 2020 relase 
+# FRC-5740-Programming-Guide-Lines OUTDATED - well depresicated in frc 2020 relase
+
+# will still work untill 2021
 
 #### This is a programming guide / layout on how to program team 5740 robot
 

@@ -33,3 +33,6 @@
 ## **Example code**
 
 [RobotExample code ](https://github.com/NicholasBlackburn1/FRC-5740-Programming-Guide-lines-/tree/master/src/main/java/frc/robot)
+
+# **Note** for any subject that i did not cover please referance WPI-LIBs new Docs 
+[WPI docs](https://https://docs.wpilib.org)
